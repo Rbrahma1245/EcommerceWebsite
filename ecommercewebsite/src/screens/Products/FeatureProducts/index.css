@@ -1,0 +1,12 @@
+/* FEATURE PRODUCTS  CSS*/
+
+
+
+.main-feature-container {
+    margin-left: 400px;
+
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    text-align: left;
+
+}

@@ -1,0 +1,107 @@
+/* MY IMAGES CSS */
+
+
+.image-section {
+    display: flex;
+    margin-left: 50px;
+}
+
+.first-image-aa {
+    width: 150px;
+    height: 90px;
+    cursor: pointer;
+}
+
+.second-image-section {
+    margin-left: 10px;
+    margin-top: 90px;
+
+}
+
+.second-image-aa {
+    width: 250px;
+    height: 190px;
+
+}
+
+
+
+
+
+/* STAR RATING CSS */
+
+.star-icon {
+    color: rgb(218, 157, 25);
+}
+
+
+
+
+/* ADD TO CART CSS */
+
+.colors-container {
+    display: flex;
+
+}
+
+.color-btn {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.color-check {
+    color: rgb(255, 255, 255)
+}
+
+.add-cart-btn {
+
+    font-size: 14px;
+    padding: 10px 24px;
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a347b9;
+    color: rgb(247, 244, 244);
+    /* border: 2px solid #081208; */
+}
+
+.add-cart-btn:hover {
+    background-color: #832a9a;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* PRODUCT LIST CSS */
+
+
+.product-list-container {
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    text-align: left;
+
+
+}
+
+
+/* SORT CSS */
+
+.sort-container {
+    margin-left: 400px;
+    display: flex;
+    justify-content: space-between;
+}

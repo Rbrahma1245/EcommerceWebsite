@@ -1,0 +1,108 @@
+/* PRODUCTS  CSS*/
+
+.text {
+    margin-left: 10px;
+    text-align: left;
+    /* word-spacing: 30px; */
+    line-break: auto;
+    display: flex;
+}
+
+.product-price {
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+/* SINGLE PRODUCT CSS */
+
+
+.container-back-button {
+    text-align: left;
+    margin-left: 100px;
+    height: 900px;
+}
+
+.single-product-container {
+
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+    height: 600px;
+}
+
+.column1 {
+    margin-left: 80px;
+    width: auto;
+    height: auto;
+    /* border: 2px solid black; */
+}
+
+.column2 {
+    margin-left: 100px;
+    width: 500px;
+    text-align: left;
+    text-align: justify;
+    /* border: 2px solid black; */
+}
+
+.deals-of-the-day {
+    color: blue;
+}
+
+.single-product-delivery {
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+
+
+.icon {
+    margin-left: 20px;
+}
+
+.waranty-icon {
+    margin-left: 60px;
+}
+
+hr {
+    height: 1px;
+    background: black;
+}
+
+
+
+
+
+
+.product-image {
+    width: 200px;
+    height: 150px;
+}
+
+
+
+
+/* PRODUCTS CONTAINER */
+
+
+.products-container-box {
+    margin-left: 100px;
+    margin-top: 50px;
+    /* height: 800px; */
+
+}
+
+.products-container-page {
+    margin-left: 100px;
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+}

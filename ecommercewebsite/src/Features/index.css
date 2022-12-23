@@ -1,0 +1,107 @@
+/* HEADER  CSS*/
+
+.logo-image {
+    width: fit-content;
+    height: 45px;
+    cursor: pointer;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    z-index: 50;
+    padding: 15px 20px;
+    height: 35px;
+
+}
+
+.nav a {
+    font-size: 15px;
+    display: inline block;
+    text-decoration: none;
+    color: black;
+    padding: 15px 10px;
+}
+
+
+
+.header-first {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.header-second {
+    margin-left: 20px;
+}
+
+.header-last {
+    display: flex;
+    align-items: center;
+    /* letter-spacing: 50px; */
+    /* border: 1px solid black; */
+}
+
+.Submitbtn:hover {
+    background-color: #c34040;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* FOOTER  CSS */
+
+.footer {
+    display: flex;
+    height: 250px;
+    padding: 10px 15px;
+    background: rgb(230, 222, 222);
+    font-size: 14px;
+    /* border: 1px solid black; */
+}
+
+.details {
+    padding: 10px 15px;
+    margin-left: 180px;
+    width: 420px;
+    margin-top: 40px;
+    font-size: 14px;
+    text-align: left;
+    line-height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border: 1px solid black; */
+    display: flex;
+
+}
+
+.details1 {
+    text-decoration: none;
+    padding: 10px 15px;
+    text-align: left;
+    margin-top: 35px;
+    margin-left: 30px;
+    line-height: 10px;
+    font-size: 15px;
+    /* border: 1px solid black; */
+}
+
+.details2 {
+    margin-top: 50px;
+    margin-left: 200px;
+    /* border: 1px solid black; */
+}
+
+img {
+    width: 170px;
+}
