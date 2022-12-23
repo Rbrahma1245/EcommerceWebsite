@@ -4,13 +4,18 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import './index.css'
 import { AppProvider } from './screens/Context/ProductContext'
+import { FilterContextProvider } from './screens/Context/FilterContext'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
   <AppProvider >
-    <BrowserRouter>
-      <App />
-    </BrowserRouter >
+    <FilterContextProvider>
+
+      <BrowserRouter>
+        <App />
+      </BrowserRouter >
+
+    </FilterContextProvider>
   </AppProvider>
 
 )

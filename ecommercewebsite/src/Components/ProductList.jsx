@@ -1,15 +1,21 @@
 import React from 'react'
-import { useProductContext } from '../screens/Context/ProductContext'
+import { useFilterContext } from '../screens/Context/FilterContext'
 import Product from '../screens/Products/Product'
+
 import './index.css'
 
 const ProductList = () => {
-    const { isLoading, featureProducts, products } = useProductContext()
+
+    const { filter_products } = useFilterContext()
+    console.log(filter_products)
+
+
+
     return (
         <div>
             <div className='product-list-container'>
 
-                {products.map((currElem) => {
+                {filter_products.map((currElem) => {
                     return < Product key={currElem.id} {...currElem} />
                 })}
             </div>

@@ -6,7 +6,7 @@ import './index.css';
 
 
 const Product = (currElem) => {
-    console.log(currElem)
+    // console.log(currElem)
     const { id, name, image, price, category } = currElem;
     return (
         <div className='product-container'>

@@ -1,17 +1,26 @@
 import React from 'react'
-import { useProductContext } from '../screens/Context/ProductContext'
+import './index.css'
+import { useFilterContext } from '../screens/Context/FilterContext'
 
 const Sort = () => {
-    const { isLoading, featureProducts, products } = useProductContext()
+    const { filter_products, sorting } = useFilterContext()
     return (
         <div className='sort-container'>
 
             <div>
-                {products.length} Product Available
+                {filter_products?.length} Product Available
             </div>
 
-            <div>
-                {products.length} Product Available
+            <div className='option-box'>
+                <div className='custom-select'>
+                    <select name="sort" id='sort' onClick={sorting}>
+                        <option value="lowest">Price (lowest)</option>
+                        <option value="highest">Price (highest)</option>
+                        <option value="a-z">Price (a-z)</option>
+                        <option value="z-a">Price (z-a)</option>
+
+                    </select>
+                </div>
             </div>
         </div>
     )

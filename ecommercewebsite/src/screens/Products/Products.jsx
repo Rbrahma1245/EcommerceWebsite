@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import FilterSection from '../../Components/FilterSection'
 import Loader from '../../Components/Loader'
 import ProductList from '../../Components/ProductList'
@@ -8,9 +7,7 @@ import FormatPrice from '../../Helpers/FormatPrice'
 import { useProductContext } from '../Context/ProductContext'
 
 const Products = () => {
-    const { isLoading, featureProducts, products } = useProductContext()
-
-
+    const { isLoading } = useProductContext()
 
 
     if (isLoading) return <Loader />
