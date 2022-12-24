@@ -52,10 +52,44 @@ const FilterReducer = (state, action) => {
 
 
 
+        case "UPDATE_FILTER_VALUE":
+
+            const { name, value } = action.payload
+            return {
+                ...state,
+                filters: {
+                    ...state.filters,
+                    [name]: value,
+                }
+            };
 
 
+        case "FILTER_PRODUCTS":
+            let { all_products } = state;
+            let tempFilterProducts = [...all_products]
+
+            const { text, category } = state.filters
+
+            if (text) {
+                tempFilterProducts = tempFilterProducts.filter((currElem) => {
+                    return currElem.name.toLowerCase().includes(text);
+                })
+            }
+
+            if (category) {
+                tempFilterProducts = tempFilterProducts.filter((currElem) => {
+
+                    return currElem.category === category;
+                })
 
 
+            }
+
+            return {
+                ...state,
+                filter_products: tempFilterProducts
+
+            }
 
 
 

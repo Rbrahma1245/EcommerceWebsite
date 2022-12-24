@@ -7,8 +7,7 @@ import './index.css'
 const ProductList = () => {
 
     const { filter_products } = useFilterContext()
-    console.log(filter_products)
-
+    // console.log(filter_products)
 
 
     return (
