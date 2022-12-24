@@ -23,6 +23,7 @@ const FilterSection = () => {
 
     const categoryData = getUniqueData(all_products, "category")
 
+    const companyData = getUniqueData(all_products, "company")
 
 
 
@@ -36,7 +37,7 @@ const FilterSection = () => {
                     />
                 </form>
             </div>
-            <div>
+            <div className='btnn'>
                 <h3>Category</h3>
                 {
                     categoryData.map((currElem, index) => {
@@ -44,13 +45,29 @@ const FilterSection = () => {
                             <button key={index}
                                 type='button' name='category' value={currElem}
                                 onClick={updateFilterValue}   >
-
                                 {currElem}
                             </button>
                         )
-
                     })
                 }
+            </div>
+
+            <div>
+                <h3>Company</h3>
+
+                <form onSubmit={(e) => e.preventDefault()}>
+                    <select name="company" onClick={updateFilterValue} >
+                        {
+                            companyData.map((currElem, index) => {
+                                return (
+                                    <option key={index} name="company" value={currElem}> {currElem} </option>
+
+                                )
+                            })
+                        }
+
+                    </select>
+                </form>
             </div>
 
         </div>
